@@ -1,1 +1,1 @@
-export const required = value => (!value ? 'Поле является обязательным' : undefined);
+export const required = value => (!value ? "Обязательное поле" : undefined);

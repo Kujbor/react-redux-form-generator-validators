@@ -1,2 +1,7 @@
-export const account = value =>
-	value && /(^\d{20}$)/.test(value) ? 'Должен содержать 20 цифр' : undefined;
+export const account = bik => value =>
+  bik &&
+  String(bik).length === 9 &&
+  value &&
+  !checkClientAccountOfCreditOrganization(value, bik)
+    ? "Неверно указан номер счета"
+    : undefined;

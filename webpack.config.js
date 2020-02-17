@@ -27,11 +27,11 @@ console.log('\x1b[36m', '=======================================================
 
 module.exports = {
 	mode: options.NODE_ENV,
-	entry: path.resolve(`${ __dirname }/src/${ options.NODE_ENV === 'production' ? 'components/ReactReduxFormGenerator.jsx' : 'index.jsx' }`),
+	entry: path.resolve(`${ __dirname }/src/${ options.NODE_ENV === 'production' ? 'validators/index.js' : 'index.jsx' }`),
 	output: {
 		path: path.resolve(`${ __dirname }/${ options.NODE_ENV === 'production' ? 'dist' : 'build' }`),
-		filename: options.NODE_ENV === 'production' ? 'react-redux-form-generator.js' : 'main.js',
-		library: 'react-redux-form-generator.js',
+		filename: options.NODE_ENV === 'production' ? 'react-redux-form-generator-validators.js' : 'main.js',
+		library: 'react-redux-form-generator-validators.js',
 		libraryTarget: 'umd',
 		umdNamedDefine: true
 	},

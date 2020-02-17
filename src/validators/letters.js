@@ -1,4 +1,4 @@
 export const letters = value =>
-	value && !/^[а-яё][а-яё\s-]*?[а-яё]$/gi.test(value)
-		? 'Может содержать только символы русского алфавита'
-		: undefined;
+  value && !/^[а-яё]{1}([а-яё-\s]+?)?[а-яё]{1}$/i.test(value)
+    ? "Только русские буквы"
+    : undefined;
