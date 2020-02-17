@@ -1,0 +1,130 @@
+[{
+	"key": "simple-fields",
+	"fields": [{
+		"label": "Text Field",
+		"name": "text_field",
+		"type": "text",
+		"validations": ["required"]
+	}, {
+		"label": "Date Field",
+		"name": "date_field",
+		"type": "date",
+		"validations": ["required"]
+	}, {
+		"label": "Email Field",
+		"name": "email_field",
+		"type": "email",
+		"validations": ["required", "email"]
+	}, {
+		"label": "Phone Field",
+		"name": "phone_field",
+		"type": "phone",
+		"validations": ["required"]
+	}, {
+		"label": "Static Field",
+		"name": "static_field",
+		"type": "static",
+		"validations": ["required"]
+	}, {
+		"label": "Radios Field",
+		"name": "radios_field",
+		"type": "radios",
+		"options": [{
+			"label": "First",
+			"value": "1"
+		}, {
+			"label": "Second",
+			"value": "2"
+		}],
+		"validations": ["required"]
+	}, {
+		"label": "Select Field",
+		"name": "select_field",
+		"type": "select",
+		"options": [{
+			"label": "First",
+			"value": "1",
+			"showIf": "data.radios_field !== '2'"
+		}, {
+			"label": "Second",
+			"value": "2",
+			"showIf": "data.radios_field !== '1'"
+		}],
+		"validations": ["required"]
+	}, {
+		"label": "File Field",
+		"name": "file_field",
+		"type": "file",
+		"validations": ["required"]
+	}]
+}, {
+	"key": "reproducing-fields",
+	"fields": [{
+		"label": "Buttons Field with adding",
+		"name": "adding_fields-add_buttons_field",
+		"type": "buttons",
+		"add": true,
+		"options": [{
+			"label": "Hide",
+			"value": "no"
+		}, {
+			"label": "Add new",
+			"value": "adding_fields"
+		}],
+		"validations": ["required"]
+	}]
+}, {
+	"key": "reproducible-fields",
+	"parent": "adding_fields",
+	"fields": [{
+		"label": "New Buttons Field with adding",
+		"name": "add_buttons_field",
+		"type": "buttons",
+		"add": true,
+		"options": [{
+			"label": "Hide",
+			"value": "no"
+		}, {
+			"label": "Add new",
+			"value": "adding_fields"
+		}],
+		"validations": ["required"]
+	}],
+	"showIf": "data['{ parent:previous }-add_buttons_field'] === 'adding_fields'"
+}, {
+	"key": "custom-fields",
+	"fields": [{
+		"label": "Buttons Field",
+		"name": "buttons_field",
+		"type": "buttons",
+		"options": [{
+			"label": "Yes",
+			"value": "1"
+		}, {
+			"label": "No",
+			"value": "0"
+		}],
+		"validations": ["required"]
+	}, {
+		"label": "Address Field",
+		"name": "address_field",
+		"type": "address",
+		"validations": ["required"]
+	}, {
+		"label": "Turnover Field",
+		"name": "turnover_field",
+		"type": "turnover",
+		"options": [{
+			"value": "test"
+		}],
+		"validations": ["required"]
+	}, {
+		"label": "Regselect Field",
+		"name": "regselect_field",
+		"type": "regselect",
+		"options": [{
+			"value": "test"
+		}],
+		"validations": ["required"]
+	}]
+}]

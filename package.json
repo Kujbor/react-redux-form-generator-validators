@@ -1,0 +1,52 @@
+{
+  "name": "react-redux-form-generator-validators",
+  "version": "2.2.0",
+  "description": "Validators for react-redux-form-generator",
+  "main": "./dist/react-redux-form-generator-validators.js",
+  "scripts": {
+    "build": "webpack --production",
+    "start": "webpack-dev-server -d --hot --watch --progress --display-reasons --display-error-details --compress"
+  },
+  "author": "kujbor",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kujbor/react-redux-form-generator-validators.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "form",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/Kujbor/react-redux-form-generator-validators/issues"
+  },
+  "homepage": "https://github.com/Kujbor/react-redux-form-generator-validators#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "args": "^4.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.6",
+    "file-loader": "^1.1.11",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^5.1.2",
+    "react-redux-form-generator": "^2.2.6",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-form": "^7.4.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
