@@ -1,6 +1,8 @@
-import moment from 'moment';
+import moment from "moment";
 
 export const maxDate = otherField => (value, allValues) =>
-	value && allValues[otherField] && moment(value).isBefore(allValues[otherField])
-		? 'Введите корректный промежуток времени'
-		: undefined;
+  value &&
+  allValues[otherField] &&
+  moment(value).isBefore(allValues[otherField])
+    ? "Введите корректный промежуток времени"
+    : undefined;

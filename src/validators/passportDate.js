@@ -1,4 +1,4 @@
-import { validatePassportDate } from './utils/validatePassportDate';
+import { validatePassportDate } from "./utils/validatePassportDate";
 
 export const passportDate = birthdayDateName => (value, data = {}) =>
-	validatePassportDate(data[birthdayDateName], value);
+  validatePassportDate(data[birthdayDateName], value);

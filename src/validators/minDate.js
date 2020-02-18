@@ -1,6 +1,6 @@
-import moment from 'moment';
+import moment from "moment";
 
 export const minDate = otherField => (value, allValues) =>
-	value && allValues[otherField] && moment(value).isAfter(allValues[otherField])
-		? 'Введите корректный промежуток времени'
-		: undefined;
+  value && allValues[otherField] && moment(value).isAfter(allValues[otherField])
+    ? "Введите корректный промежуток времени"
+    : undefined;

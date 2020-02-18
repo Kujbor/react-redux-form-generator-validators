@@ -1,4 +1,4 @@
-import { dateEarlierThan } from './dateEarlierThan';
+import { dateEarlierThan } from "./dateEarlierThan";
 
 export const dateEarlierThanFieldDate = checkDateName => (value, data = {}) =>
-	dateEarlierThan(data[checkDateName])(value);
+  dateEarlierThan(data[checkDateName])(value);
